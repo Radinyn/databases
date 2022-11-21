@@ -53,6 +53,14 @@ Hubert Kowal, Mateusz Knap, Igor Urbanik
 
 ---
 
+## Funkcje systemowe
+- Wyliczanie kosztu zamówienia
+- Przydzielanie rabatów
+- Sprawdzanie poprawności menu
+- Sprawdzanie czy możliwa jest rezerwacja
+
+---
+
 <br>
 <details>
 <summary>Detale technicznie</summary>
