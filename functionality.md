@@ -3,7 +3,61 @@ Hubert Kowal, Mateusz Knap, Igor Urbanik
 
 # Funkcjonalność
 
-## Właściciel
+## Role
+
+---
+
+### Pracownik
+- Rejestrowanie nowych klientów
+- Aktualizowanie menu
+    - Dodawanie i usuwanie potraw
+    - Modyfikacja cen
+    - Oznaczanie stanu dostępności potrawy
+    - Sprawdzenie czy menu jest aktualizowane dostatecznie często
+- Generowanie listy wolnych stolików
+- Potwierdzanie bądź anulowanie złożonych przez klientów zamówień
+- Generowanie raportów dla poszczególnych klientów firmowych
+- Wystawianie faktur
+- Sprawdzanie historii zamówień
+- Wyświetlenie zamówień w pewnym okresie (w szczególności aktualnych)
+
+### Właściciel (Administrator)
+- Wszystkie uprawnienia pracownika
+- Generowanie raportów finansowych restauracji
+    - Możliwość sprecyzowania okresu
+- Tworzenie, usuwanie, edycja ról
+- Pełen dostęp do danych w bazie
+- Definiowanie dokładnych zasad działania rabatów
+
+---
+
+### Klient no-name
+- Składanie zamówienia online
+    - Monitorowanie aktualnego stanu zamówienia
+- Składanie zamówienia na miejscu
+- Wyświetlanie aktualnego menu
+- Możliwość rejestracji online
+
+### Klient indywidualny
+- Wszystkie uprwanienia klienta no-name
+- Rezerwowanie stolika oraz rezygnacja z rezerwacji
+- Sprawdzenie aktualnego postępu rabatów
+- Powiadomienia przy zmianie stanu rabatu
+
+### Klient firmowy
+- Wszystkie uprwanienia klienta no-name
+- Rezerwowanie stolika oraz rezygnacja z rezerwacji
+    - Na firmę
+    - Imiennie
+- Możliwość wybrania rozliczania okresowego (catering)
+
+---
+
+<br>
+<details>
+<summary>Detale technicznie</summary>
+
+## Restauracja
 
 ### Klienci
 1. Możliwość zarejestrowania nowego klienta
@@ -66,3 +120,4 @@ Hubert Kowal, Mateusz Knap, Igor Urbanik
 1. Firmy mogą rezerwować stoliki imiennie bądź na firmę
 1. Firmy mogą składać zamówienia cateringowe
 1. Rezerwacje można anulować
+</details>
