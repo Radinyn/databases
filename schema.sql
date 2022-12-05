@@ -7,7 +7,7 @@ CREATE TABLE Companies (
     CompanyID int  NOT NULL,
     CompanyName nvarchar(50)  NOT NULL,
     NIP int  NOT NULL,
-    CONSTRAINT CustomerID PRIMARY KEY  (CompanyID)
+    CONSTRAINT Companies_pk PRIMARY KEY  (CompanyID)
 );
 
 -- Table: Customers
@@ -18,7 +18,7 @@ CREATE TABLE Customers (
     Phone nvarchar(20)  NULL,
     Address nvarchar(50)  NOT NULL,
     PostalCode nvarchar(20)  NOT NULL,
-    CONSTRAINT CustomerID PRIMARY KEY  (CustomerID)
+    CONSTRAINT Customers_pk PRIMARY KEY  (CustomerID)
 );
 
 -- Table: Discounts
@@ -46,7 +46,7 @@ CREATE TABLE Individuals (
     IndividualID int  NOT NULL,
     FirstName nvarchar(50)  NOT NULL,
     LastName nvarchar(50)  NOT NULL,
-    CONSTRAINT IndividualID PRIMARY KEY  (IndividualID)
+    CONSTRAINT Individuals_pk PRIMARY KEY  (IndividualID)
 );
 
 -- Table: Menu
@@ -63,7 +63,7 @@ CREATE TABLE NamedReservations (
     ReservationID int  NOT NULL,
     FirstName nvarchar(50)  NOT NULL,
     LastName nvarchar(50)  NOT NULL,
-    CONSTRAINT NamedReservationID PRIMARY KEY  (NamedReservationID)
+    CONSTRAINT NamedReservations_pk PRIMARY KEY  (NamedReservationID)
 );
 
 -- Table: OrderDetails
