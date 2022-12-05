@@ -1,5 +1,5 @@
 -- Created by Vertabelo (http://vertabelo.com)
--- Last modification date: 2022-12-05 09:49:34.896
+-- Last modification date: 2022-12-05 14:36:23.673
 
 -- tables
 -- Table: Companies
@@ -78,7 +78,7 @@ CREATE TABLE OrderDetails (
 -- Table: Orders
 CREATE TABLE Orders (
     OrderID int  NOT NULL,
-    CustomerID int  NOT NULL,
+    CustomerID int  NULL,
     OrderDate datetime  NOT NULL,
     DueDate datetime  NULL,
     CompletionDate datetime  NULL,
@@ -89,7 +89,7 @@ CREATE TABLE Orders (
 -- Table: Reservations
 CREATE TABLE Reservations (
     ReservationID int  NOT NULL,
-    OrderID int  NOT NULL,
+    OrderID int  NULL,
     TableID int  NOT NULL,
     StartTime datetime  NOT NULL,
     EndTime datetime  NOT NULL,
